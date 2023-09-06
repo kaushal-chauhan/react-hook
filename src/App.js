@@ -8,6 +8,8 @@ import Posts from "./components/fetchData/Posts"
 import UseReducerDemo from "./components/UseReducerDemo"
 import ReducerWithContext from "./components/ReducerWithContext"
 import FetchDataWithReducer from "./components/FetchDataWithReducer"
+import UseCallbackDemo from "./components/UseCallbackDemo"
+import UseRefDemo from "./components/UseRefDemo"
 
 import UseContextDemo from "./components/UseContextDemo"
 export const UserContext = React.createContext()
@@ -28,8 +30,10 @@ function App() {
         <UseContextDemo />
       </UserContext.Provider> */}
       {/* <UseReducerDemo /> */}
-      <ReducerWithContext />
-      <FetchDataWithReducer />
+      {/* <ReducerWithContext />
+      <FetchDataWithReducer /> */}
+      <UseCallbackDemo />
+      <UseRefDemo />
     </div>
   );
 }
