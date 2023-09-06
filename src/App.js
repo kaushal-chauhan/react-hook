@@ -1,10 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./components/Counter"
+import Products from "./components/Products"
+import StateArray from "./components/StateArray"
 
 function App() {
   return (
     <div className="App">
-      Test
+      <Counter />
+      <Products />
+      <StateArray />
     </div>
   );
 }
