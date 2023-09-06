@@ -10,12 +10,14 @@ import ReducerWithContext from "./components/ReducerWithContext"
 import FetchDataWithReducer from "./components/FetchDataWithReducer"
 import UseCallbackDemo from "./components/UseCallbackDemo"
 import UseRefDemo from "./components/UseRefDemo"
-
+import useCustomHook from "./components/useCustomHook"
 import UseContextDemo from "./components/UseContextDemo"
 export const UserContext = React.createContext()
 
 function App() {
   const [show, setShow] = useState(true)
+  const [counter, setCounter] = React.useState(0)
+  useCustomHook(counter)
   return (
     <div className="App">
       {/* <Counter />
@@ -34,6 +36,11 @@ function App() {
       <FetchDataWithReducer /> */}
       <UseCallbackDemo />
       <UseRefDemo />
+      <div>
+          <button onClick={() => {
+              setCounter(counter+1)
+          }}>Counter - {counter}</button>
+      </div>
     </div>
   );
 }
