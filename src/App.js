@@ -6,6 +6,8 @@ import MouseEvent from "./components/MouseEvent"
 import React, { useState } from "react"
 import Posts from "./components/fetchData/Posts"
 import UseReducerDemo from "./components/UseReducerDemo"
+import ReducerWithContext from "./components/ReducerWithContext"
+import FetchDataWithReducer from "./components/FetchDataWithReducer"
 
 import UseContextDemo from "./components/UseContextDemo"
 export const UserContext = React.createContext()
@@ -25,7 +27,9 @@ function App() {
       {/* <UserContext.Provider value={'Chauhan'}>
         <UseContextDemo />
       </UserContext.Provider> */}
-      <UseReducerDemo />
+      {/* <UseReducerDemo /> */}
+      <ReducerWithContext />
+      <FetchDataWithReducer />
     </div>
   );
 }
