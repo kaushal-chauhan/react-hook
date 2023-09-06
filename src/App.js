@@ -4,6 +4,7 @@ import StateArray from "./components/StateArray"
 import UseEffectDemo from "./components/UseEffectDemo"
 import MouseEvent from "./components/MouseEvent"
 import { useState } from "react"
+import Posts from "./components/fetchData/Posts"
 
 function App() {
   const [show, setShow] = useState(true)
@@ -12,10 +13,11 @@ function App() {
       {/* <Counter />
       <Products />
       <StateArray /> */}
-      <UseEffectDemo />
+      {/* <UseEffectDemo />
       <br /><br/>
       <button onClick={() => setShow(!show)}>Show/Hide</button>
-      {show && <MouseEvent />}
+      {show && <MouseEvent />} */}
+      <Posts />
     </div>
   );
 }
